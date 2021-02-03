@@ -4,20 +4,53 @@ from tkinter import scrolledtext
 from tkinter.filedialog import *
 import fileinput
 from tkinter.messagebox import *
+import webbrowser
+import re
+import tkinter as tk
+from tkinter import PhotoImage
 
 
 def funktion(a):
 	tabs.select(a)
 
+def print_hello():
+    webbrowser.open_new_tab('https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF')
 
-def image_(name,i):
-    global img
-    tabs.select(i)
-    img=PhotoImage(file=name)
-    can.create_image(20,20,image=img,anchor=NW)
+def print_hello2():
+    webbrowser.open_new_tab('https://horo.mail.ru/prediction/aries/today/')
 
+def print_hello3():
+    webbrowser.open_new_tab('https://horo.mail.ru/prediction/taurus/today/')
 
+def print_hello4():
+    webbrowser.open_new_tab('https://horo.mail.ru/prediction/gemini/today/')
 
+def print_hello5():
+    webbrowser.open_new_tab('https://horo.mail.ru/prediction/cancer/today/')
+
+def print_hello6():
+    webbrowser.open_new_tab('https://horo.mail.ru/prediction/leo/today/')
+
+def print_hello7():
+    webbrowser.open_new_tab('https://horo.mail.ru/prediction/virgo/today/')
+
+def print_hello8():
+    webbrowser.open_new_tab('https://horo.mail.ru/prediction/libra/today/')
+
+def print_hello9():
+    webbrowser.open_new_tab('https://horo.mail.ru/prediction/scorpio/today/')
+
+def print_hello10():
+    webbrowser.open_new_tab('https://horo.mail.ru/prediction/sagittarius/today/')
+
+def print_hello11():
+    webbrowser.open_new_tab('https://horo.mail.ru/prediction/capricorn/today/')
+
+def print_hello12():
+    webbrowser.open_new_tab('https://horo.mail.ru/prediction/aquarius/today/')
+
+def print_hello13():
+    webbrowser.open_new_tab('https://horo.mail.ru/prediction/pisces/today/')
 
 root=Tk()
 root.geometry("700x500")
@@ -88,13 +121,70 @@ m2.add_command(label="Светло синний",command=lambda:root.config(bg="
 m2.add_command(label="Фиолетовый", command=lambda:root.config(bg="violet"))
 m2.add_command(label="Белый",command=lambda:root.config(bg="white"))
 
+imagetest = PhotoImage(file="goroskop.png")
 
-m3=Menu(M,tearoff=0)
-M.add_cascade(label="Image",menu=m3)
-m3.add_command(label="Овен",command=lambda:image_("oven.png",1))
-m3.add_command(label="Телец",command=lambda:image_("telec.png",2))
+button_qwer = tk.Button(tab1, image=imagetest, command=print_hello)
+button_qwer.pack()
 
 
+imagetest2 = PhotoImage(file="oven2.png")
+
+button_qwer2 = tk.Button(tab2, image=imagetest2, command=print_hello2)
+button_qwer2.pack()
+imagetest3 = PhotoImage(file="telec2.png")
+
+button_qwer3 = tk.Button(tab3, image=imagetest3, command=print_hello3)
+button_qwer3.pack()
+
+imagetest4 = PhotoImage(file="bliznece.png")
+
+button_qwer4 = tk.Button(tab4, image=imagetest4, command=print_hello4)
+button_qwer4.pack()
+
+imagetest5 = PhotoImage(file="rak.png")
+
+button_qwer5 = tk.Button(tab5, image=imagetest5, command=print_hello5)
+button_qwer5.pack()
+
+imagetest6 = PhotoImage(file="lev.png")
+
+button_qwer6 = tk.Button(tab6, image=imagetest6, command=print_hello6)
+button_qwer6.pack()
+
+imagetest7 = PhotoImage(file="deva.png")
+
+button_qwer7 = tk.Button(tab7, image=imagetest7, command=print_hello7)
+button_qwer7.pack()
+
+imagetest8 = PhotoImage(file="vesi.png")
+
+button_qwer8 = tk.Button(tab8, image=imagetest8, command=print_hello8)
+button_qwer8.pack()
+
+imagetest9 = PhotoImage(file="skorpio.png")
+
+button_qwer9 = tk.Button(tab9, image=imagetest9, command=print_hello9)
+button_qwer9.pack()
+
+imagetest10 = PhotoImage(file="strelec.png")
+
+button_qwer10 = tk.Button(tab10, image=imagetest10, command=print_hello10)
+button_qwer10.pack()
+
+imagetest11 = PhotoImage(file="kozerog.png")
+
+button_qwer11 = tk.Button(tab11, image=imagetest11, command=print_hello11)
+button_qwer11.pack()
+
+imagetest12 = PhotoImage(file="vodolei.png")
+
+button_qwer12 = tk.Button(tab12, image=imagetest12, command=print_hello12)
+button_qwer12.pack()
+
+imagetest13 = PhotoImage(file="rebe.png")
+
+button_qwer13 = tk.Button(tab13, image=imagetest13, command=print_hello13)
+button_qwer13.pack()
 
 
 

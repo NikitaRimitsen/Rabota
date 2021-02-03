@@ -24,10 +24,19 @@
     <Compile Include="Rabota.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bliznece.png" />
+    <Content Include="deva.png" />
     <Content Include="goroskop.png" />
-    <Content Include="goroskop.txt" />
-    <Content Include="oven.png" />
-    <Content Include="telec.png" />
+    <Content Include="kozerog.png" />
+    <Content Include="lev.png" />
+    <Content Include="oven2.png" />
+    <Content Include="rak.png" />
+    <Content Include="rebe.png" />
+    <Content Include="skorpio.png" />
+    <Content Include="strelec.png" />
+    <Content Include="telec2.png" />
+    <Content Include="vesi.png" />
+    <Content Include="vodolei.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
