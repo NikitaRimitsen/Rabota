@@ -56,6 +56,7 @@ root=Tk()
 root.geometry("700x500")
 root.title("Гороскоп")
 
+
 tabs=ttk.Notebook(root)
 tab1=Frame(tabs)
 tab2=Frame(tabs)
@@ -70,6 +71,7 @@ tab10=Frame(tabs)
 tab11=Frame(tabs)
 tab12=Frame(tabs)
 tab13=Frame(tabs)
+tab14=Frame(tabs)
 tabs.add(tab1,text="Главная")
 tabs.add(tab2,text="Овен")
 tabs.add(tab3,text="Телец")
@@ -83,9 +85,10 @@ tabs.add(tab10,text="Стрелец")
 tabs.add(tab11,text="Козерог")
 tabs.add(tab12,text="Водолей")
 tabs.add(tab13,text="Рыбы")
+tabs.add(tab14,text="Просто")
 tabs.pack()
-can=Canvas(tab2,width=300,height=200)
-can.pack()
+#can=Canvas(tab2,width=300,height=200)
+#can.pack()
 
 
 
@@ -146,7 +149,7 @@ imagetest5 = PhotoImage(file="rak.png")
 button_qwer5 = tk.Button(tab5, image=imagetest5, command=print_hello5)
 button_qwer5.pack()
 
-imagetest6 = PhotoImage(file="lev.png")
+imagetest6 = PhotoImage(file="lev.png").subsample(4)
 
 button_qwer6 = tk.Button(tab6, image=imagetest6, command=print_hello6)
 button_qwer6.pack()
@@ -185,9 +188,6 @@ imagetest13 = PhotoImage(file="rebe.png")
 
 button_qwer13 = tk.Button(tab13, image=imagetest13, command=print_hello13)
 button_qwer13.pack()
-
-
-
 
 tabs.pack(fill="both")
 root.mainloop()
